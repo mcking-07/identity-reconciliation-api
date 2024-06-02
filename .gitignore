@@ -1,0 +1,11 @@
+# env_files
+.env
+
+# node_modules
+node_modules
+
+# playground
+.playground
+
+# postgres_data
+.pgdata

@@ -1,0 +1,16 @@
+{
+  "name": "identity-reconciliation-api",
+  "version": "1.0.0",
+  "description": "an api to identify and keep track of a customer's identity across multiple purchases",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitespeed",
+    "backend",
+    "identity-reconciliation"
+  ],
+  "author": "mckinf-07",
+  "license": "MIT"
+}
