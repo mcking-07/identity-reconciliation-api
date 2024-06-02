@@ -1,0 +1,9 @@
+PORT=<app_port>
+
+DB_USER=<db_user>
+DB_HOST=<db_hostname>
+DB_NAME=<db_name>
+DB_PASSWORD=<db_password>
+DB_PORT=<db_port>
+
+CONFIG_FILE_PATH=</path/to/config.json>

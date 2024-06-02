@@ -4,13 +4,24 @@
   "description": "an api to identify and keep track of a customer's identity across multiple purchases",
   "main": "src/modules/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/modules/index.js"
   },
   "keywords": [
     "bitespeed",
     "backend",
     "identity-reconciliation"
   ],
-  "author": "mckinf-07",
-  "license": "MIT"
+  "author": "mcking-07",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-list-endpoints": "^7.1.0",
+    "http-status-codes": "^2.3.0",
+    "nodemon": "^3.1.2",
+    "pg": "^8.11.5",
+    "uuid": "^9.0.1",
+    "winston": "^3.13.0"
+  }
 }
