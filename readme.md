@@ -1,6 +1,6 @@
-## Identity Reconciliation API
+## Identity Reconciliation API (BiteSpeed Backend Task)
 
-This repository contains an API designed to identify and keep track of a customer's identity across multiple purchases. The API utilizes Node.js with Express framework for backend development, PostgreSQL for database management, and Docker for containerization.
+This repository serves as a task submission at BiteSpeed (Backend). The task involves creating an API for identifying and reconciling customer identities across multiple purchases. The API utilizes Node.js with Express framework for backend development, PostgreSQL for database management, and Docker for containerization.
 
 ### Installation
 
