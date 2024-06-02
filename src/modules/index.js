@@ -11,7 +11,7 @@ const logger = loggerFor(module);
 const app = express();
 const PORT = config.port;
 
-const context = '/api';
+const context = '';
 configureMiddleware(app);
 configureRoutes(app, context);
 
