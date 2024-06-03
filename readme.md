@@ -32,14 +32,14 @@ Once the API server is running, you can interact with it by sending HTTP request
 
 #### Identity Reconciliation Endpoint
 
-- **URL**: `/identity`
+- **URL**: `https://identity-reconciliation-api.mcking.in/identity`
 - **Method**: POST
 - **Description**: Identifies and reconciles customer identity based on provided email and phone number.
 - **Request Body**:
   ```json
   {
-    "email": "example@example.com",
-    "phoneNumber": "1234567890"
+    "email": "lorraine@hillvalley.edu",
+    "phoneNumber": "123456"
   }
   ```
 - **Response**:
@@ -47,16 +47,34 @@ Once the API server is running, you can interact with it by sending HTTP request
   {
     "contact": {
       "primaryContactId": "1",
-      "emails": ["example@example.com"],
-      "phoneNumbers": ["1234567890"],
+      "emails": ["lorraine@hillvalley.edu"],
+      "phoneNumbers": ["123456"],
       "secondaryContactIds": []
+    }
+  }
+  ```
+- **Request Body**:
+  ```json
+  {
+    "email": "mcfly@hillvalley.edu",
+    "phoneNumber": "123456"
+  }
+  ```
+- **Response**:
+  ```json
+  {
+    "contact": {
+      "primaryContactId": 1,
+      "emails": ["lorraine@hillvalley.edu","mcfly@hillvalley.edu"]
+      "phoneNumbers": ["123456"]
+      "secondaryContactIds": [2]
     }
   }
   ```
 
 #### Health Check Endpoint
 
-- **URL**: `/healthcheck`
+- **URL**: `https://identity-reconciliation-api.mcking.in/healthcheck`
 - **Method**: GET
 - **Description**: Verifies the health status of the API server.
 
